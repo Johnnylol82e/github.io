@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StickForever | Official Game Arena</title>
+    
+    <script async src="https://widgets.playgama.com/index.js"></script>
+
+    <style>
+        /* Neon Black Aesthetic */
+        :root {
+            --bg-color: #000000;
+            --neon-green: #39FF14;
+            --neon-glow: 0 0 15px #39FF14, 0 0 30px #39FF14;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--neon-green);
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: var(--neon-glow);
+            margin-bottom: 10px;
+            letter-spacing: 5px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        /* The Game Container */
+        #game-box {
+            width: 90%;
+            max-width: 1000px;
+            height: 600px;
+            border: 3px solid var(--neon-green);
+            box-shadow: var(--neon-glow);
+            border-radius: 10px;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Playgama Widget Element */
+        #widget-playgama {
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            h1 { font-size: 1.5rem; }
+            #game-box { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>STICKFOREVER</h1>
+    <p class="tagline">The Ultimate No-Lag Gaming Arena</p>
+
+    <div id="game-box">
+        <div id="widget-playgama">
+            <div style="opacity: 0.2; font-family: sans-serif; font-size: 10px; padding: 10px;">
+                Connecting to Playgama Servers...
+            </div>
+            <script>
+                // Example: window.playgamaWidget.init({ widgetId: 'YOUR_ID_HERE' });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 StickForever Labs | Developed by an Internet Thinker
+    </div>
+
+</body>
+</html>
